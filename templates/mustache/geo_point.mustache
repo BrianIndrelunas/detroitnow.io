@@ -1,16 +1,16 @@
 
 <div class="marker-popup row">
-    <div class="col-md-4">
-        <div class="row">
-            <div class="host-image">
-                <img src="/static/img/hostimages/{{ host }}.png">
-            </div>
-        </div>
-        <div class="row platform">
-            <span>{{#getPlatformImage}}{{platform}}{{/getPlatformImage}}</span>
-        </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="host-image">
+        <img src="/static/img/hostimages/{{ host }}.png">
+      </div>
     </div>
-    <div class="col-md-8">
-        <a class="title" target="_blank" href="http://{{ path }}">{{ title }}</a>
+    <div class="row platform">
+      <span>{{#getPlatformImage}}{{platform}}{{/getPlatformImage}}</span>
     </div>
+  </div>
+  <div class="col-md-8">
+    <a class="title" target="_blank" href="http://{{ path }}">{{ title }}</a>
+  </div>
 </div>
