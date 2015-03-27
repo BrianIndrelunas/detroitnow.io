@@ -1,0 +1,4 @@
+argparse==1.2.1
+six==1.8.0
+tldextract==1.5.1
+tornado==3.2.1

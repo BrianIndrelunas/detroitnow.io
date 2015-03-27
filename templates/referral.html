@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+
+{% block js %}
+<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/referral.js') }}"></script>
+{% if template %}
+<script id="referral_template" type="text/x-handlebars-template">{% raw template %}</script>
+{% end %}
+{% end %}
+
+{% block css %}
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="{{ static_url('css/referral.css') }}" rel="stylesheet" type="text/css">
+{% end %}
+
+{% block title %}
+Referrals
+{% end %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <h3>Where does the crowd come from? Total referrals: <span id="total" class="badge">0</span></h3>
+        <hr style="margin:3px;" />
+    </div>
+    <div class="col-md-8">
+        <span class="loading"><i class="fa fa-circle-o-notch fa-spin"></i> Loading ...</span>
+        <div id="shuffle_data" class="col-md-12">
+            <div class="col-md-12 shuffle__sizer"></div>
+        </div>
+    </div>
+</div>
+
+{% end %}

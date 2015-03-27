@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+
+{% block js %}
+<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/engage.js') }}"></script>
+{% end %}
+
+{% block css %}
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="{{ static_url('css/engage.css') }}" rel="stylesheet" type="text/css">
+{% end %}
+
+{% block title %}Engage{% end %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-12">
+		<div id="engage_data" class="col-md-12">
+			<div class="col-md-12 shuffle__sizer"></div>
+		</div>
+	</div>
+</div>
+<hr />
+<h2>
+    This is the running average time for active users — seconds spent reading & commenting. How do we increase engaged time?
+</h2>
+{% end %}

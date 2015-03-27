@@ -1,0 +1,8 @@
+*~
+.DS_Store
+*.*~
+*.pyc
+*.orig
+__pycache__
+static/bower_components
+settings.cfg

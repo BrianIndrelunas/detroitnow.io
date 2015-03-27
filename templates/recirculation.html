@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+
+{% block js %}
+<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/recirculation.js') }}"></script>
+{% end %}
+
+{% block css %}
+<link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="{{ static_url('bower_components/epoch/epoch.min.css') }}" rel="stylesheet">
+<link href="{{ static_url('css/recirculation.css') }}" rel="stylesheet" type="text/css">
+<style type="text/css">
+#delta {
+	margin-right: 5px;
+}
+</style>
+{% end %}
+
+{% block title %}
+Recirculation
+{% end %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>What percentage of current digital users are engaging with <strong><em>more than one</em></strong> story?</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <div id="gauge" class="epoch" style="width: 100%; height: 400px;"></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>How can we improve this percentage?</h1>
+    </div>
+</div>
+{% end %}

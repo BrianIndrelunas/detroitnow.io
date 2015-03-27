@@ -1,0 +1,42 @@
+body {
+    color: #f04e55;
+    font-family: "Arimo";
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.epoch .gauge .needle {
+    fill: #f04e55;
+}
+.epoch .gauge .needle-base {
+    fill: #f04e55;
+}
+
+.epoch {
+    font-family: "Arimo", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.epoch .gauge-labels .value {
+    text-anchor: middle;
+    font-size: 600%;
+    fill: #f04e55;
+}
+
+.epoch .gauge .arc.outer {
+    stroke-width: 8px;
+    stroke: #3d97df;
+}
+.epoch .gauge .arc.inner {
+    stroke-width: 2px;
+    stroke: #3d97df;
+}
+.epoch .gauge .tick {
+    stroke-width: 2px;
+    stroke: #3d97df;
+}

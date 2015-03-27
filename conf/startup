@@ -1,0 +1,14 @@
+#!/bin/bash
+
+NAME="detroitnow"
+SITEDIR=/srv/sites/detroitnow
+VIRTENV=/srv/virtualenvs/detroitnow
+
+echo "Hi there, starting $NAME"
+
+# Activate virtual environment
+cd $VIRTENV
+source ./bin/activate
+
+cd $SITEDIR
+exec python run.py

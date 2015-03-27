@@ -1,0 +1,29 @@
+{
+  "name": "detroitnow",
+  "version": "0.0.0",
+  "authors": [
+    "Eric Bower <neurosnap@gmail.com>"
+  ],
+  "description": "Michigan.com chartbeat dashboard utilities",
+  "license": "MIT",
+  "homepage": "http://neurosnap.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "shufflejs": null,
+    "handlebars": null,
+    "epoch": null,
+    "d3": null,
+    "c3": null, 
+    "colorbrewer2": null,
+    "leaflet": null,
+    "requirejs": null
+  }
+}

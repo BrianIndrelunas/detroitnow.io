@@ -1,0 +1,193 @@
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Arimo", sans-serif;
+	font-size: 22px;
+	line-height: 1.62857143;
+	/*color: #7F6300;*/
+	color: #fff;
+	background-color: #f04e55;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.col-md-4 {
+	padding-left: 45px;
+	padding-top: 35px;
+}
+
+.header{
+	z-index: 6;
+}
+
+.loading{
+	-webkit-transition: opacity 500ms ease-out;
+	-moz-transition: opacity 500ms ease-out;
+	-o-transition: opacity 500ms ease-out;
+	transition: opacity 500ms ease-out;
+	opacity: 1;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	background: #f04e55;
+	position:absolute;
+}
+
+.loading .subtitle{
+	width: 50%;
+	margin: 20% auto;
+	text-align: center;
+}
+
+.loading-done{
+	opacity: 0;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	/*width: 100%;*/
+}
+
+.pie-chart-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#chart .subtitle{
+	width: 50%;
+	margin: 20% auto;
+	text-align: center;
+}
+
+.subtitle{
+	color: white;
+}
+
+svg{
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+.c3-chart-arc text {
+	font-size: 22px;
+	font-family: "Arimo";
+	stroke: #fff;
+	fill: #fff;
+	padding: 5px;
+
+}
+
+.c3-legend-item text {
+	font-size: 22px;
+	stroke: #fff;
+	fill: #fff;
+	font-family: "Arimo";
+}
+
+.c3-legend-item {
+	padding: 30px;
+}
+
+/* Table stuff */
+th{
+}
+
+tr{
+
+}
+
+tr:last-child{
+}
+
+
+/* These are the site names in the table */
+th:first-child, td:first-child{
+	-webkit-transition: width 200ms ease-out;
+	-moz-transition: width 200ms ease-out;
+	-o-transition: width 200ms ease-out;
+	transition: width 200ms ease-out;
+
+	/*width: 5em;*/
+	width: 15em;
+	text-align: left;
+	padding-right: 0;
+	overflow: visible;
+}
+
+th, td{
+	width: 10px;
+	text-align: center;
+	padding: 5px 0px;
+	padding-right: 5px;
+	/*border-bottom: 1px solid #FFE7BF;*/
+
+}
+
+/* C3 stuff */
+.c3-tooltip{
+	background: #7dcbba;
+}
+
+.c3-legend-item{
+	color: white;
+}
+
+
+/*
+	Responsive stuff
+	http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+.chart-info, .chart{
+	width: 80%;
+	display: inline-block;
+}
+
+.chart-info{
+	height: 100vh;
+}
+
+.chart{
+	height: 100vh;
+}
+
+.chart-info{
+	padding-top: 5%;
+
+}
+
+@media only screen and (max-width : 1000px) {
+	th:first-child, td:first-child{
+		width: 7em;
+		text-overflow: ellipsis;
+		display: block;
+		overflow: hidden;
+	}
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/*	.chart-info, .chart{
+		width: 100%;
+		height: 50vh;
+		display: inline-block;
+		padding: 0;
+	}*/
+
+}

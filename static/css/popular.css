@@ -1,0 +1,62 @@
+body {
+	font-family: "Arimo", sans serif;
+	font-size: 22px;
+	line-height: 1.62857143;
+	color: #76b729;
+	background-color: #7dcbba
+;
+}
+
+h1 small {
+	font-size: 35%;
+	color: #513629
+
+;
+}
+
+h1 {
+	color: #513629
+
+;
+	font-weight: 700;
+}
+
+a {
+	color: #513629;
+}
+
+a:hover {
+	color: #3d97df
+;
+}
+
+a:visited {
+	color: #3d97df
+;
+}
+
+.badge {
+	font-size: 18px;
+	background-color: #3d97df
+;
+}
+
+.page-header {
+	width: 320px;
+	float: right;
+	display: inline-block;
+}
+
+small, .small {
+	font-size: 65%;
+​}
+
+.loading {
+	margin-top: 10px;
+}
+
+.hawt {
+	color: #513629
+
+;
+}
