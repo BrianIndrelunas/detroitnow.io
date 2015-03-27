@@ -1,7 +1,8 @@
 {% extends "template.html" %}
 
 {% block js %}
-<!-- <script src="{{ static_url('bower_components/d3/d3.min.js') }}"></script> -->
+<script src="{{ static_url('bower_components/d3/d3.min.js') }}"></script>
+<script src="{{ static_url('bower_components/colorbrewer2/colorbrewer.js') }}"></script>
 <script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/authors.js') }}"></script>
 {% end %}
 
@@ -16,27 +17,27 @@ Authors
 
 {% block fullscreen %}
 <div class="row">
-    <div class="col-md-12 text-center">
-        <h1>Which Writers Are Building An Audience Right Now?</h1>
-        <h3>Each block is proportional to the size of each byline's total real-time readers</h3>
-    </div>
+  <div class="col-md-12 text-center">
+    <h1>Which Writers Are Building An Audience Right Now?</h1>
+    <h3>Each block is proportional to the size of each byline's total real-time readers</h3>
+  </div>
 </div>
 <div class="row">
-    <div class="col-md-12 text-center" id="author_treemap"></div>
+  <div class="col-md-12 text-center" id="author_treemap"></div>
 </div>
 
 <div class="modal fade" id="author_modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" data-author=""></h4>
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" data-author=""></h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
 </div>
 {% end %}
