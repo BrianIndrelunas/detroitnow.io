@@ -1,7 +1,8 @@
 {% extends "template.html" %}
 
 {% block js %}
-<script src="{{ static_url('bower_components/shufflejs/dist/jquery.shuffle.min.js') }}"></script>
+<script src="{{ static_url('bower_components/shufflejs/dist/jquery.shuffle.modernizr.min.js') }}"></script>
+<script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script>
 <script src="{{ static_url('js/referral.js') }}"></script>
 {% if template %}
 <script id="referral_template" type="text/x-handlebars-template">{% raw template %}</script>

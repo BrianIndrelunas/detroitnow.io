@@ -11,7 +11,7 @@ $(function() {
 
 function connect_socket() {
   // Websocket used for constant streaming of data
-  var ws = new WebSocket("ws://" + base.socket_domain  + "/popular-socket");
+  var ws = new WebSocket("ws://" + socket_domain  + "/popular-socket");
   // Server sent a message to the client, update active map
   ws.onmessage = function(e) {
     var response = jQuery.parseJSON(e.data);
@@ -39,7 +39,7 @@ function connect_socket() {
   ws.onclose = function() {
     setTimeout(function() {
       connect_socket();
-    }, base.reconnect_socket_timer);
+    }, reconnect_socket_timer);
   };
 
   return ws;
