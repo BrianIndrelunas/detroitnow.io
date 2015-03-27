@@ -1,7 +1,13 @@
 {% extends "template.html" %}
 
 {% block js %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/active.js') }}"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="{{ static_url('js/base.js') }}"></script>
+<script src="{{ static_url('bower_components/d3/d3.min.js') }}"></script>
+<script src="{{ static_url('bower_components/epoch/epoch.min.js') }}"></script>
+<script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script>
+<script src="{{ static_url('js/active.js') }}"></script>
 {% end %}
 
 {% block css %}
