@@ -1,34 +1,34 @@
 body {
-    font-family: "Arimo";
-    color: #fff;
-    background-color: #7dcbba;
+  font-family: "Arimo";
+  color: #fff;
+  background-color: #7dcbba;
 
 }
 
 h1 {
-    font-size: 256px;
-    font-weight: 700;
+  font-size: 256px;
+  font-weight: 700;
 }
 
 .epoch {
-    font-family: "Arimo", Helvetica, Arial, sans-serif;
-    font-size: 18pt;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  font-size: 18pt;
 }
 .epoch .axis path, .epoch .axis line {
-    fill: none;
-    stroke: #fff;
+  fill: none;
+  stroke: #fff;
 }
 
 .epoch .line {
-    fill: none;
-    stroke-width: 4px;
-    stroke: #fff;
+  fill: none;
+  stroke-width: 4px;
+  stroke: #fff;
 }
 .epoch.sparklines .line {
-    stroke-width: 4px;
-    stroke: #fff;
+  stroke-width: 4px;
+  stroke: #fff;
 }
 
 .epoch .text {
-    color: #fff;
+  color: #fff;
 }

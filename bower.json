@@ -21,9 +21,8 @@
     "handlebars": null,
     "epoch": null,
     "d3": null,
-    "c3": null, 
+    "c3": null,
     "colorbrewer2": null,
-    "leaflet": null,
-    "requirejs": null
+    "leaflet": null
   }
 }
