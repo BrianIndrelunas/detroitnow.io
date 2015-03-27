@@ -8,11 +8,9 @@
 {% end %}
 
 {% block js %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}"
-        data-main="{{ static_url('js/geo_point') }}"></script>
-{% if template %}
+<script src="{{ static_url('bower_components/leaflet/dist/leaflet.js') }}"></script>
+<script src="{{ static_url('js/geo_point.js') }}"></script>
 <script id="marker-popup-template" type="text/x-handlebars-template">{% raw template %}</script>
-{% end %}
 {% end %}
 
 {% block title %}Geo Point{% end %}

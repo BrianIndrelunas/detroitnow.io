@@ -1,7 +1,9 @@
 {% extends 'template.html' %}
 
 {% block js %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/engage.js') }}"></script>
+<script src="{{ static_url('bower_components/shufflejs/dist/jquery.shuffle.modernizr.js') }}"></script>
+<script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script>
+<script src="{{ static_url('js/engage.js') }}"></script>
 {% end %}
 
 {% block css %}

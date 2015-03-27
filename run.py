@@ -48,6 +48,7 @@ class GeoPoint(RequestHandler):
     def get(self):
         with open("templates/mustache/geo_point.mustache") as fp:
             template = fp.read()
+        print(template)
         self.render("geo_point.html", template=template)
 
 
