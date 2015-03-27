@@ -6,29 +6,28 @@
 {% end %}
 
 {% block js %}
-<!-- <script src="{{ static_url('bower_components/handlebars/handlebars.min.js') }}"></script> -->
-<!-- <script src="{{ static_url('bower_components/shufflejs/dist/jquery.shuffle.modernizr.min.js') }}"></script> -->
-<!-- <script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script> -->
+<script src="{{ static_url('bower_components/shufflejs/dist/jquery.shuffle.modernizr.min.js') }}"></script>
+<script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script>
 {% if template %}
 <script id="popular_template" type="text/x-handlebars-template">{% raw template %}</script>
 {% end %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/popular.js') }}"></script>
+<script src="{{ static_url('js/popular.js') }}"></script>
 {% end %}
 
 {% block title %}Popular{% end %}
 
 {% block content %}
 <div class="row">
-    <div class="col-md-4">
-        <h1>What Does The Crowd Say? <br /><small><span id="concurrent" class="badge shuff_val">0</span> Total news readers at this moment</small></h1>
-        <span class="hawt">These are the most interesting headlines, according to readers across Michigan. What can we do to build on this feedback?</span>
-        <hr style="margin:3px;" />
+  <div class="col-md-4">
+    <h1>What Does The Crowd Say? <br /><small><span id="concurrent" class="badge shuff_val">0</span> Total news readers at this moment</small></h1>
+    <span class="hawt">These are the most interesting headlines, according to readers across Michigan. What can we do to build on this feedback?</span>
+    <hr style="margin:3px;" />
+  </div>
+  <div class="col-md-8">
+    <span class="loading"><i class="fa fa-circle-o-notch fa-spin"></i> Loading ...</span>
+    <div id="shuffle_data" class="col-md-12">
+      <div class="col-md-12 shuffle__sizer"></div>
     </div>
-    <div class="col-md-8">
-        <span class="loading"><i class="fa fa-circle-o-notch fa-spin"></i> Loading ...</span>
-        <div id="shuffle_data" class="col-md-12">
-            <div class="col-md-12 shuffle__sizer"></div>
-        </div>
-    </div>
+  </div>
 </div>
 {% end %}

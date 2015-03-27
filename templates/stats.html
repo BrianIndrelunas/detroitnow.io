@@ -15,31 +15,33 @@
 {% if table_row_template %}
 <script id="stats-row-template" type="text/x-handlebars-template">{% raw table_row_template %}</script>
 {% end %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/stats.js') }}"></script>
+<script src="{{ static_url('bower_components/c3/c3.js') }}"></script>
+<script src="{{ static_url('js/stats.js') }}"></script>
 {% end %}
 
 {% block title %} Usage Stats {% end %}
 
 {% block content %}
 <div class="row">
-		<div class="col-md-4">
-				<h1>Whence Do They Come?</h1><br/>
-				<span class="hawt">This is the breakdown of referral sources for all our digital visitors.
-				<ul>
-					<li>Social = Facebook, Twitter, etc. + Email, apps and IMs</li>
-					<li>Direct = Bookmarks and typed URLs, but also everything the analytics can't figure out.</li>
-				</ul>
-				How can we improve on each of these categories?</span>
-				<br/>
-		</div>
+  <div class="col-md-4">
+    <h1>Whence Do They Come?</h1><br/>
+    <span class="hawt">This is the breakdown of referral sources for all our digital visitors.
+      <ul>
+        <li>Social = Facebook, Twitter, etc. + Email, apps and IMs</li>
+        <li>Direct = Bookmarks and typed URLs, but also everything the analytics can't figure out.</li>
+      </ul>
+      How can we improve on each of these categories?
+    </span>
+    <br/>
+  </div>
 
-		<div class="col-md-8">
-				<div class='loading'>
-					<div class='subtitle'>Loading visitor data...</div>
-				</div>
-				<div class='pie-chart-container'>
-					<div class='chart' id='chart'></div>
-				</div>
-		</div>
+  <div class="col-md-8">
+    <div class='loading'>
+      <div class='subtitle'>Loading visitor data...</div>
+    </div>
+    <div class='pie-chart-container'>
+      <div class='chart' id='chart'></div>
+    </div>
+  </div>
 </div>
 {% end %}

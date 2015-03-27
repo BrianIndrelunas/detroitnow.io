@@ -1,7 +1,9 @@
 {% extends "template.html" %}
 
 {% block js %}
-<script src="{{ static_url('bower_components/requirejs/require.js') }}" data-main="{{ static_url('js/viewers.js') }}"></script>
+<script src="{{ static_url('bower_components/c3/c3.js') }}"></script>
+<script src="{{ static_url('lib/jquery.animateNumber.min.js') }}"></script>
+<script src="{{ static_url('js/viewers.js') }}"></script>
 {% end %}
 
 {% block css %}
@@ -9,9 +11,9 @@
 <link href="{{ static_url('bower_components/c3/c3.css') }}" rel="stylesheet">
 <link href="{{ static_url('css/viewers.css') }}" rel="stylesheet" type="text/css">
 <style type="text/css">
-#delta {
+  #delta {
     margin-right: 5px;
-}
+  }
 </style>
 {% end %}
 
@@ -21,23 +23,23 @@ Viewers
 
 {% block content %}
 <div class="row">
-    <div class="col-md-12 text-center">
-        <h2>How many visitors from across Michigan are on our sites right now?</small></h2>
-    </div>
+  <div class="col-md-12 text-center">
+    <h2>How many visitors from across Michigan are on our sites right now?</small></h2>
+  </div>
 </div>
 <div class="row">
-    <div class="col-md-12 text-center">
-        <h1><i id="delta" class="fa"></i><span id="viewers">0</span></h1>
-    </div>
+  <div class="col-md-12 text-center">
+    <h1><i id="delta" class="fa"></i><span id="viewers">0</span></h1>
+  </div>
 </div>
 <div class="row">
-    <div class="col-md-12 text-center">
-        <div id="line_chart" style="width: 100%; height: 200px;"></div>
-    </div>
+  <div class="col-md-12 text-center">
+    <div id="line_chart" style="width: 100%; height: 200px;"></div>
+  </div>
 </div>
 <div class="row">
-    <div class="col-md-12 text-center">
-        <h2>What can you do to engage some more?</h2>
-    </div>
+  <div class="col-md-12 text-center">
+    <h2>What can you do to engage some more?</h2>
+  </div>
 </div>
 {% end %}
