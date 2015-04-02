@@ -106,6 +106,12 @@ class Stats(RequestHandler):
             table_row_template = fp.read()
         self.render("stats.html", table_template=table_template, table_row_template=table_row_template)
 
+class TigersXtra(RequestHandler):
+    @asynchronous
+    def get(self):
+        self.render('tigers-xtra.html', ios_link='http://j.mp/tigersios',
+                        android_link='http://j.mp/tigersand')
+
 @gen.coroutine
 def chartbeat_heartbeat():
     """ Infinite loop that requests all chartbeat data
@@ -186,6 +192,7 @@ def init_server():
             (r"/stats-socket", stats.Socket),
             (r"/referral", Referral),
             (r"/referral-socket", referral.Socket),
+            (r'/tigers-xtra', TigersXtra)
         ],
         debug=options.debug,
         template_path=os.path.join(base_dir, "templates"),
