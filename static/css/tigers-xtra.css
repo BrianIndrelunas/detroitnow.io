@@ -1,0 +1,86 @@
+/*
+  http://paletton.com/#uid=30f0u0kv8rSkqzlpQvcy7mwFhhn
+
+  ORANGE #de4406
+  BLUE #0D578F
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+body {
+  background-color: #0D578F;
+  color: white;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.app-title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.app-title .no-bold {
+  font-weight: 300;
+}
+
+.title {
+  text-align:  center;
+  color: white;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.logo img {
+  border-radius: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+
+a, a:visited, a:active, a:hover {
+  color: #F96930;
+  /*color: #de4406;*/
+}
+
+.app-link {
+  text-align: center;
+}
+
+.app-link {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .app-link .platform {
+    text-align: right;
+  }
+  .app-link .link {
+    text-align: left;
+  }
+}
+
+
+.review {
+  margin-top: 20px;
+}
