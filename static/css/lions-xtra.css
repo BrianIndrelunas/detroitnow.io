@@ -1,8 +1,8 @@
 /*
   http://paletton.com/#uid=30f0u0kv8rSkqzlpQvcy7mwFhhn
 
-  ORANGE #de4406
-  BLUE #0D578F
+  GREY #c0c0c0
+  BLUE #0F6EAE
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -15,7 +15,7 @@
 @media (min-width: 1200px) {  }
 
 body {
-  background-color: #0D578F;
+  background-color: #c0c0c0;
   color: white;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -41,7 +41,6 @@ h2 {
 
 .title {
   text-align:  center;
-  color: white;
 }
 
 .fa {
@@ -65,7 +64,7 @@ a {
 }
 
 a, a:visited, a:active, a:hover {
-  color: #F96930;
+  color: #0F6EAE;
   /*color: #de4406;*/
 }
 
