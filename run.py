@@ -116,8 +116,8 @@ class TigersXtra(RequestHandler):
 class LionsXtra(RequestHandler):
     @asynchronous
     def get(self):
-        self.render('lions-xtra.html', ios_link='https://itunes.apple.com/us/app/lions-xtra/id957468093?mt=8',
-                        android_link='http://michigan.com')
+        self.render('lions-xtra.html', ios_link='http://j.mp/lionsios',
+                        android_link='http://j.mp/lionsand')
 
 @gen.coroutine
 def chartbeat_heartbeat():
