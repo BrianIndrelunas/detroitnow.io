@@ -6,3 +6,5 @@
 __pycache__
 static/bower_components
 settings.cfg
+*.swp
+node_modules

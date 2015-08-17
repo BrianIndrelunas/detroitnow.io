@@ -110,14 +110,26 @@ class Stats(RequestHandler):
 class TigersXtra(RequestHandler):
     @asynchronous
     def get(self):
-        self.render('tigers-xtra.html', ios_link='http://j.mp/tigersios',
+        self.render('xtra/base.html', team_name='tigers', ios_link='http://j.mp/tigersios',
                         android_link='http://j.mp/tigersand')
 
 class LionsXtra(RequestHandler):
     @asynchronous
     def get(self):
-        self.render('lions-xtra.html', ios_link='http://j.mp/lionsios',
+        self.render('xtra/base.html', team_name='lions', ios_link='http://j.mp/lionsios',
                         android_link='http://j.mp/lionsand')
+
+class WolverineXtra(RequestHandler):
+    @asynchronous
+    def get(self):
+        self.render('xtra/base.html', team_name='wolverines', ios_link='http://j.mp/mich-ios',
+                android_link='http://j.mp/mich-and')
+
+class SpartanXtra(RequestHandler):
+    @asynchronous
+    def get(self):
+        self.render('xtra/base.html', team_name='spartans', ios_link='http://j.mp/msu-ios',
+                android_link='http://j.mp/msu-and')
 
 @gen.coroutine
 def chartbeat_heartbeat():
@@ -200,7 +212,9 @@ def init_server():
             (r"/referral", Referral),
             (r"/referral-socket", referral.Socket),
             (r'/tigers-xtra', TigersXtra),
-            (r'/lions-xtra', LionsXtra)
+            (r'/lions-xtra', LionsXtra),
+            (r'/wolverines-xtra', WolverineXtra),
+            (r'/spartans-xtra', SpartanXtra)
         ],
         debug=options.debug,
         template_path=os.path.join(base_dir, "templates"),

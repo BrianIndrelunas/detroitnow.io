@@ -1,12 +1,12 @@
-{% extends 'template.html' %}
+{% extends '../template.html' %}
 
 {% block css %}
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
-<link href='/static/css/lions-xtra.css' rel='stylesheet'>
+<link href='/static/css/{{ team_name }}-xtra.css' rel='stylesheet'>
 {% end %}
 
-{% block title %}Lions Xtra{% end %}
+{% block title %}{{ team_name.title() }}Xtra{% end %}
 
 {% block fullscreen %}
   <div class='container-fluid'>
@@ -15,10 +15,10 @@
     </div>
     <div class='row'>
       <div class='col-md-6 logo'>
-        <img src='/static/img/lions-xtra.png'>
+        <img src='/static/img/{{ team_name }}-xtra.png'>
       </div>
       <div class='col-md-6 text'>
-        <div class='col-md-12'><h2>All of your Lions coverage in one app</h2></div>
+        <div class='col-md-12'><h2>All of your {{ team_name.title() }} coverage in one app</h2></div>
         <div class='col-md-12 app-link'>
           <h2><i class="fa fa-apple"></i> <a href='{{ ios_link }}'>{{ ios_link }}</a></h2>
         </div>
@@ -26,7 +26,7 @@
           <h2><i class="fa fa-android"></i> <a href='{{ android_link }}'>{{ android_link }}</a></h2>
         </div>
         <div class='col-md-12 review'>
-          <h2>Help out by rating and reviewing <span class='app-title'>Lions <span class='no-bold'>Xtra</span></span> on the app store</h2>
+          <h2>Help out by rating and reviewing <span class='app-title'>{{ team_name.title() }} <span class='no-bold'>Xtra</span></span> on the app store</h2>
         </div>
       </div>
     </div>
