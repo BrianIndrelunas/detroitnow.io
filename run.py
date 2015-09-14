@@ -131,6 +131,12 @@ class SpartanXtra(RequestHandler):
         self.render('xtra/base.html', team_name='spartans', ios_link='http://j.mp/msu-ios',
                 android_link='http://j.mp/msu-and')
 
+class WingsXtra(RequestHandler):
+    @asynchronous
+    def get(self):
+        self.render('xtra/base.html', team_name='Red Wings', ios_link='http://j.mp/wings-ios',
+                android_link='http://j.mp/wings-and', img_name='red-wings')
+
 @gen.coroutine
 def chartbeat_heartbeat():
     """ Infinite loop that requests all chartbeat data
@@ -214,7 +220,8 @@ def init_server():
             (r'/tigers-xtra', TigersXtra),
             (r'/lions-xtra', LionsXtra),
             (r'/wolverines-xtra', WolverineXtra),
-            (r'/spartans-xtra', SpartanXtra)
+            (r'/spartans-xtra', SpartanXtra),
+            (r'/wings-xtra', WingsXtra)
         ],
         debug=options.debug,
         template_path=os.path.join(base_dir, "templates"),

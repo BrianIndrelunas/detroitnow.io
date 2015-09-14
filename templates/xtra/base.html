@@ -1,9 +1,11 @@
 {% extends '../template.html' %}
 
+{% set img_name=img_name or team_name %}
+
 {% block css %}
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
-<link href='/static/css/{{ team_name }}-xtra.css' rel='stylesheet'>
+<link href='/static/css/{{ img_name }}-xtra.css' rel='stylesheet'>
 {% end %}
 
 {% block title %}{{ team_name.title() }}Xtra{% end %}
@@ -15,7 +17,7 @@
     </div>
     <div class='row'>
       <div class='col-md-6 logo'>
-        <img src='/static/img/{{ team_name }}-xtra.png'>
+        <img src='/static/img/{{ img_name }}-xtra.png'>
       </div>
       <div class='col-md-6 text'>
         <div class='col-md-12'><h2>All of your {{ team_name.title() }} coverage in one app</h2></div>

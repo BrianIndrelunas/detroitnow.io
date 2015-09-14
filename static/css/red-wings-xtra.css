@@ -1,8 +1,8 @@
 /*
-  http://paletton.com/#uid=30f0u0kv8rSkqzlpQvcy7mwFhhn
+  http://paletton.com/#uid=35C0u0krOtThiCDmjvvuqodz1j9
 
-  GREY #c0c0c0
-  BLUE #0F6EAE
+  RED #EC1F24
+  WHITE
 */
 
 /* Small devices (tablets, 768px and up) */
@@ -15,7 +15,7 @@
 @media (min-width: 1200px) {  }
 
 body {
-  background-color: #c5c7cf;
+  background-color: #EC1F24;
   color: white;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -51,6 +51,7 @@ h2 {
   border-radius: 60px;
   width: 80%;
   margin: 0 auto;
+  border: 1px solid white;
 }
 
 @media (min-width: 768px) {
@@ -64,8 +65,7 @@ a {
 }
 
 a, a:visited, a:active, a:hover {
-  color: #0F6EAE;
-  /*color: #de4406;*/
+  color: white;
 }
 
 .app-link {
