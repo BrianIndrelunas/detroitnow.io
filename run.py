@@ -111,25 +111,25 @@ class TigersXtra(RequestHandler):
     @asynchronous
     def get(self):
         self.render('xtra/base.html', team_name='tigers', ios_link='http://j.mp/tigersios',
-                        android_link='http://j.mp/tigersand')
+                        android_link='http://j.mp/tigersand', img_name='tigers')
 
 class LionsXtra(RequestHandler):
     @asynchronous
     def get(self):
         self.render('xtra/base.html', team_name='lions', ios_link='http://j.mp/lionsios',
-                        android_link='http://j.mp/lionsand')
+                        android_link='http://j.mp/lionsand', img_name='lions')
 
 class WolverineXtra(RequestHandler):
     @asynchronous
     def get(self):
         self.render('xtra/base.html', team_name='wolverines', ios_link='http://j.mp/mich-ios',
-                android_link='http://j.mp/mich-and')
+                android_link='http://j.mp/mich-and', img_name='wolverines')
 
 class SpartanXtra(RequestHandler):
     @asynchronous
     def get(self):
         self.render('xtra/base.html', team_name='spartans', ios_link='http://j.mp/msu-ios',
-                android_link='http://j.mp/msu-and')
+                android_link='http://j.mp/msu-and', img_name='spartans')
 
 class WingsXtra(RequestHandler):
     @asynchronous
